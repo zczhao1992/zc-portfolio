@@ -30,7 +30,7 @@ export default function Intro() {
           >
             <Image
               src="/avatar.jpg"
-              alt="Ricardo portrait"
+              alt="zc"
               width="192"
               height="192"
               quality="95"
@@ -60,7 +60,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm ZC.</span> I'm a{" "}
+        <span className="font-bold">你好, 我是 ZC.</span> 我是一个{" "}
         <h2
           id="name"
           className=" text-center  text-2xl  sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
@@ -77,8 +77,9 @@ export default function Intro() {
             repeat={Infinity}
           />
         </h2>
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
+        <span>拥有</span>
+        <span className="font-bold"> 8 年</span>经验. 我享受搭建
+        <span>项目的乐趣</span>. 我专注于{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 

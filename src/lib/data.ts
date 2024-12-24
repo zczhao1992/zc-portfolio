@@ -6,6 +6,10 @@ import { LuGraduationCap } from "react-icons/lu";
 // import rmtdevImg from "@/public/rmtdev.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 import Avatar from "../../public/avatar.jpg";
+import Manager from "../../public/manager.png";
+import Dashboard from "../../public/dashboard.png";
+import ImgEditor from "../../public/imgEditor.png";
+import WorkFlow from "../../public/workFlow.png";
 
 export const links = [
   {
@@ -37,24 +41,24 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "家里蹲大学",
+    location: "北京",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "前端工程师",
+    location: "北京",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "前端工程师",
+    location: "北京",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
@@ -64,25 +68,61 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: Avatar,
+    title: "React-Manager",
+    description: "基于React的开源后台管理模版",
+    tags: [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "AntDesign",
+      "DndKit",
+      "Vite",
+      "Mock",
+    ],
+    gitHubUrl: "https://github.com/zczhao1992/react-manager",
+    demoUrl: "https://react-manager-zc.netlify.app",
+    imageUrl: Manager,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: Avatar,
+    title: "Next-Dashboard",
+    description: "基于Next的开源任务管理系统",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Hono", "Appwrite"],
+    gitHubUrl: "https://github.com/zczhao1992/next-dashboard",
+    demoUrl: "https://next-dashboard-zc.netlify.app",
+    imageUrl: Dashboard,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: Avatar,
+    title: "Next-Image-Editor",
+    description: "基于Next的开源图片编辑器",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "Drizzle",
+      "Hono",
+      "Fabric",
+    ],
+    gitHubUrl: "https://github.com/zczhao1992/next-image-editor",
+    demoUrl: "https://next-image-editor-zc.vercel.app",
+    imageUrl: ImgEditor,
+  },
+  {
+    title: "Next-Workflow",
+    description: "基于Next的开源网页自动化工作流",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "Prisma",
+      "Supabase",
+      "Clerk",
+      "ReactFlow",
+    ],
+    gitHubUrl: "https://github.com/zczhao1992/next-workflow.git",
+    demoUrl: "https://next-workflow-zc.netlify.app",
+    imageUrl: WorkFlow,
   },
 ] as const;
 
@@ -99,11 +139,8 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Zustand",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Hono",
 ] as const;

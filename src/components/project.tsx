@@ -14,6 +14,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  gitHubUrl,
+  demoUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -37,7 +39,7 @@ export default function Project({
           <h3 className="text-2xl font-semibold">{title}</h3>
           <div className="w-[3.25rem] h-[1.3rem] flex gap-3 text-sm text-gray-500 dark:text-gray-300">
             <Link
-              href={""}
+              href={gitHubUrl}
               target="_blank"
               className="w-full flex items-center hover:underline underline-offset-2"
             >
@@ -45,7 +47,7 @@ export default function Project({
             </Link>
 
             <Link
-              href={""}
+              href={demoUrl}
               target="_blank"
               className="w-full flex items-center hover:underline underline-offset-2"
             >
